@@ -24,7 +24,7 @@ public struct SwapPool has key, store {
 }
 
 fun init(otw: TOSHIKO, ctx: &mut TxContext) {
-    let decimals: u8 = 9;
+    let decimals: u8 = 9; // Default for most SUI coins. 6 for stables, 18 for EVM compatibility
     let symbol: vector<u8> = b"TOSHIKO";
     let name: vector<u8> = b"TOSHIKO";
     let description: vector<u8> = b"Personal project coin";
